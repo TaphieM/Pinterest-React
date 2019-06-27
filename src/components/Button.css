@@ -1,0 +1,52 @@
+.genericbutton {
+    padding: 14px;
+    border-radius: 10%;
+    border-style: solid;
+    color:white;
+    margin-right: 4px;
+ 
+}
+
+.buttonbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.quotes{
+    background-color: #666A86;
+}
+
+.fashion{
+    background-color: #7D2E68;
+}
+.compsci{
+    background-color: #A499B3;
+}
+
+.career{
+    background-color: #251351;
+}
+.technology{
+    background-color: #36213E;
+}
+.pictures{
+    background-color: #80A4ED;
+}
+.post{
+    background-color: #6B5CA5;
+}
+.logo{
+    background-color: #223843;
+}
+.culture{
+    background-color: #9B71A6;
+}
+.entrepeneur{
+    background-color: #3C4F76;
+}
+.style{
+    background-color: #4B4E6D;
+}
+
+        
