@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 .navbar{
-padding: 10px;
 text-align: center;
-display: flex;
+display: inline-flex; 
+font-family: 'Roboto', sans-serif;
 }
 
 .bar{
@@ -11,69 +11,55 @@ display: flex;
     padding-top: 10px;
 }
 
-.navbar span {
-   margin-right:20px; 
-   font-family: 'Roboto', sans-serif;
-}
 .pinterest{
     color:#B10F2E;
     font-size: 30px;
-    margin-left:10px;
-    margin-right:30px;
-    margin-top:8px;    
+    display: flex;
 }
 
 .loop {
-    color: #E6E6EA;
-    font-size: 20px;
-    background-color:#F4F4F8;
-    padding-bottom: 6px;
+    color: rgba(133, 126, 131, 0.673);
+    font-size: 30px;
+    background-color:rgb(240, 234, 239);
+    padding: 6px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 .search {
    border-style: solid;
-   background-color: #F4F4F8;
-   border-color: #F4F4F8;
+   background-color:rgb(240, 234, 239);
+   border-color: rgb(240, 234, 239);
    border-right-color:#E6E6EA;
-   width: 750px;
-   height: 20px;
+   width: 600px;
+   height: 30px;
 }
-
-.custom-select{
-   position: relative;
-   border-style: solid;
-   background-color: #F4F4F8;
-   border-color: #F4F4F8;
+ .custom-select {
+   border: 0px;
    width: 90px;
-   height: 20px;
-   margin-right: 20px;
-}
-
-.custom-select select {
-  border: 0px;
-  background-color: #F4F4F8;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  -webkit-appearance: button;
-  }
-
- .custom-select::before {
-    content: url(http://cdn.onlinewebfonts.com/svg/img_295694.svg);
-    position: absolute;
-    top: 25%;
-    right: 2%;
-    width: 15%; 
-    line-height: 10px;
-  }
+   height: 30px;
+   background-color:rgb(240, 234, 239);
+   font-family: 'Roboto', sans-serif;
+   font-size: 12px;
+   -webkit-appearance: button;
+   border-top-left-radius: 0%;
+   border-bottom-left-radius: 0%;
+   overflow: hidden;
+   margin-right:20px;
+   }
  
 .icons {
-    color: #E6E6EA;
+    color: rgba(133, 126, 131, 0.673);
     font-size: 25px;
-    margin-right:10px;
-    margin-left:10px;
 }
 
-span{
-    padding-top: 2px;
-    color: rgba(188, 188, 189, 0.749);
+button{
+    padding: 12px;
+    color: rgba(133, 126, 131, 0.673);
+    border-radius: 30%;
+    border-style: none;
 }
+
+button:hover {
+    background-color:rgb(240, 234, 239);
+  }
