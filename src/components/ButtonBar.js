@@ -17,7 +17,7 @@ class ButtonBar extends React.Component {
         <Button className="post" name="Poster" />
         <Button className="logo" name="Logo" />
         <Button className="culture" name="Culture" />
-        <Button className="entrepeneur" name="Entrepeneur" />
+        <Button className="entrepeneur" name="Entrepreneur" />
         <Button className="style" name="Style" />
         </section>
       );
