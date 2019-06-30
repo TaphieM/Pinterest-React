@@ -4,14 +4,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPinterest } from '@fortawesome/free-brands-svg-icons';
 import {faBell, faCommentDots, faEllipsisH, faUserCircle, faSearch} from '@fortawesome/free-solid-svg-icons';
 
+
+
 class Navbar extends React.Component{
+    state={
+        query:"",
+    }
+  
+    searchQuery=e=>{
+        if(e.key==="Enter"){
+            this.setState({  //el segundo parámetro es un callback para que llame a tiempo a la busqueda
+                query:e.target.value
+              },()=>{
+              this.props.searchQuery(this.state.query);
+              });
+        }  
+      } 
+       
  render(){
      return(
          <header className="navbar">
             <button><FontAwesomeIcon className="pinterest" icon={faPinterest} /></button>
             <div className="bar">
              <FontAwesomeIcon className="loop" icon={faSearch} />
-             <input className="search" type="text" placeholder="Search"/>
+             <input className="search" type="text" placeholder="Search" onKeyPress={this.searchQuery} />
                 <select className="custom-select">
               <option>All Pins</option>
                 </select>
@@ -25,6 +41,8 @@ class Navbar extends React.Component{
              <button><FontAwesomeIcon className="icons" icon={faEllipsisH} /></button>  
              </div>
          </header>
+        
+        
      )
  }
 }
