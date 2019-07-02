@@ -1,23 +1,25 @@
 //props=noticias así lo conecto con App
 import React from 'react';
+import './ImagesContainer.css';
 import Image from './Image';
-
+import MasonryLayout from './MasonryLayout';
 
 const ImagesContainer = ({images}) =>(
-    <div className="row">
+    <section className="imageContainer">
+    <MasonryLayout columns={5} gap={19}>
         {images.map(item => (
 
          <Image 
         //  modal={this.openModal}
-         key={item.urls.full}
+         key={item.id}
          item={item}  
          
          /> 
         ))
 
         }
-
-    </div>
+    </MasonryLayout>
+    </section>
 
 )
 
