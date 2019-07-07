@@ -22,22 +22,37 @@ class App extends React.Component {
   searchQuery = async (query="sunset") => { 
 
     try{
-      const url =`https://api.unsplash.com/search/photos?page=1&per_page=20&query=${query}&client_id=1b299c0bd94221a0dd7f688c732451169af221cfa536cf9501b2745f49a54aa1`;
+      const url =`https://api.unsplash.com/search/photos?page=1&per_page=1&query=${query}&client_id=1b299c0bd94221a0dd7f688c732451169af221cfa536cf9501b2745f49a54aa1`;
       const response = await fetch(url);
-      const images = await response.json();
+      const data = await response.json();
       // console.log(images.results);
   
       this.setState({
         page: 1,
-        images: images.results,
+        images: data.results,
       })
     } catch(error){
       this.setState({
         error:error,
-      })
+      })  
     }
     
    }
+
+  //  cargarMasImagenes = () => {
+  //   let pageNew = this.state.page + 1
+  //   let imagenesAntiguas = this.state.images
+  //   fetch(`https://pixabay.com/api/?key=9828833-9a15a3dc938016b93df55afe1&q=${this.state.busqueda}&image_type=photo&lang=es&page=${pageNew}`)
+  //     .then(response => response.json())
+  //     .then(datos => {
+  //       this.setState({
+  //         resultadoBusqueda: imagenesAntiguas.concat(datos.hits),
+  //         page: pageNew,
+  //         cargando: false,
+  //       })
+  //     })
+  // }
+
 
 
   render() {
@@ -52,7 +67,8 @@ class App extends React.Component {
       <ButtonBar searchQuery={this.searchQuery}/>
 
       <div>
-      <ImagesContainer images={this.state.images}/>
+      <ImagesContainer img={this.state.images}/>
+      <button onClick={() => this.cargarMasImagenes()}>Loadmore</button>
       </div>
 
       </div>

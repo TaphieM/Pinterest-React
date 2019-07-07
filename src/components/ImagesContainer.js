@@ -4,24 +4,29 @@ import './ImagesContainer.css';
 import Image from './Image';
 import MasonryLayout from './MasonryLayout';
 
-const ImagesContainer = ({images}) =>(
+
+class ImagesContainer extends React.Component{
+    render(){
+        return(
     <section className="imageContainer">
     <MasonryLayout columns={5} gap={19}>
-        {images.map(item => (
-
-         <Image 
+        {this.props.img.map(item => (   
+        <Image 
         //  modal={this.openModal}
-         key={item.id}
-         item={item}  
-         
-         /> 
+        img={item.urls.thumb}
+        alt={item.alt_description}
+        tags={item.tags[0].title}
+        key={item.id}
+        item={item}  
+        /> 
         ))
-
         }
     </MasonryLayout>
     </section>
+        )
+    }
+}
 
-)
 
 
 // showPhotos(){
