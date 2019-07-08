@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pinterest-React/static/css/main.b760eb79.chunk.css",
+    "main.js": "/Pinterest-React/static/js/main.5dd713e2.chunk.js",
+    "main.js.map": "/Pinterest-React/static/js/main.5dd713e2.chunk.js.map",
+    "runtime~main.js": "/Pinterest-React/static/js/runtime~main.296e0b3e.js",
+    "runtime~main.js.map": "/Pinterest-React/static/js/runtime~main.296e0b3e.js.map",
+    "static/js/2.adaf410a.chunk.js": "/Pinterest-React/static/js/2.adaf410a.chunk.js",
+    "static/js/2.adaf410a.chunk.js.map": "/Pinterest-React/static/js/2.adaf410a.chunk.js.map",
+    "index.html": "/Pinterest-React/index.html",
+    "precache-manifest.c3593e6daa712cbbd69359e7f598190d.js": "/Pinterest-React/precache-manifest.c3593e6daa712cbbd69359e7f598190d.js",
+    "service-worker.js": "/Pinterest-React/service-worker.js",
+    "static/css/main.b760eb79.chunk.css.map": "/Pinterest-React/static/css/main.b760eb79.chunk.css.map"
+  }
+}
