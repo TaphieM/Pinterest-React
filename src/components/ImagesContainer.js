@@ -30,20 +30,4 @@ class ImagesContainer extends React.Component{
     }
 }
 
-
-
-// showPhotos(){
-//   const photos=this.state.data.map(item=>{
-//     return(
-//     <Image
-//     modal={this.openModal}
-//     url={item.urls.thumb}/>
-//     )
-//   })
-//   return photos
-// }
-  
-       
-
-
 export default ImagesContainer;

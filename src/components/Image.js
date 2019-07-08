@@ -4,21 +4,18 @@ import Modal from './Modal.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-
-//onClick={()=>props.modal(props.url)} va en el img para ver el modal
- class  Image extends React.Component{
-   state={
+class  Image extends React.Component{
+  state={
       onOpen: false 
-     }
-     
+    }
 
- handleOpenModal= () =>{
+handleOpenModal= () =>{
   this.setState({onOpen:true}) 
 }
 
- handleCloseModal= e =>{
-   this.setState({onOpen:false})
- }
+handleCloseModal= e =>{
+  this.setState({onOpen:false})
+}
 
   render(){
     return( 
