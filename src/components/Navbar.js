@@ -24,7 +24,7 @@ class Navbar extends React.Component{
  render(){
      return(
          <header className="navbar">
-            <button><FontAwesomeIcon className="pinterest" icon={faPinterest} /></button>
+            <button id="btn-save"><FontAwesomeIcon className="pinterest" icon={faPinterest} /></button>
             <div className="bar">
              <FontAwesomeIcon className="loop" icon={faSearch} />
              <input className="search" type="text" placeholder="Search" onKeyPress={this.searchQuery} />

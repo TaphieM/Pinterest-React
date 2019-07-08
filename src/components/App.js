@@ -22,7 +22,7 @@ class App extends React.Component {
   searchQuery = async (query="sunset") => { 
 
     try{
-      const url =`https://api.unsplash.com/search/photos?page=1&per_page=1&query=${query}&client_id=1b299c0bd94221a0dd7f688c732451169af221cfa536cf9501b2745f49a54aa1`;
+      const url =`https://api.unsplash.com/search/photos?page=1&per_page=20&query=${query}&client_id=1b299c0bd94221a0dd7f688c732451169af221cfa536cf9501b2745f49a54aa1`;
       const response = await fetch(url);
       const data = await response.json();
       // console.log(images.results);

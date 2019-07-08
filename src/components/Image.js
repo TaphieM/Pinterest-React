@@ -8,16 +8,16 @@ import { faEllipsisH, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 //onClick={()=>props.modal(props.url)} va en el img para ver el modal
  class  Image extends React.Component{
    state={
-      modalisOpen: false 
+      onOpen: false 
      }
      
 
  handleOpenModal= () =>{
-  this.setState({modalisOpen:true}) 
+  this.setState({onOpen:true}) 
 }
 
  handleCloseModal= e =>{
-   this.setState({modalisOpen:false})
+   this.setState({onOpen:false})
  }
 
   render(){
@@ -25,13 +25,18 @@ import { faEllipsisH, faChevronDown } from '@fortawesome/free-solid-svg-icons';
       <div className="card">
       {/* <div><button className="tag">{tags[0].title}<FontAwesomeIcon className="narrow" icon={faChevronDown} /></button><button className="save">Save</button></div> */}
       <div className="cardImage" >
-      <img className="imgCard"src={this.props.img} alt={this.props.alt} onClick={this.handleOpenModal}/>
+      <img className="imgCard" src={this.props.img} alt={this.props.alt} onClick={this.handleOpenModal}/>
       <button className="more"><FontAwesomeIcon  icon={faEllipsisH} /></button>
       </div>
       <Modal 
+      imgsm={this.props.imgsm}
+      alt={this.props.alt}
+      tags={this.props.tags}
+      user={this.props.name}
+      website={this.props.website}
+      likes={this.props.likes}
       onClose={this.handleCloseModal}
-      modalisOpen={this.state.modalisOpen}>
-      <img src={this.props.img}/>
+      onOpen={this.state.onOpen}>
       </Modal>
       </div> 
     )
@@ -39,20 +44,5 @@ import { faEllipsisH, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 }
 
-
-// const Modal = (props) => {
-//   if(!props.modalisOpen){
-//       return null;
-//   }
-//   return(
-//   <div className="Modal">
-//   <div className="Modal__container">
-//   {props.children}
-//       <button className="Modal_close-button" onClick={props.handleCloseModal}>X</button>
-      
-//   </div>
-//   </div>
-//   )
-// }
 
 export default Image;

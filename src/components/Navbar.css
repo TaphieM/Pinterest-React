@@ -20,7 +20,7 @@ font-family: 'Roboto', sans-serif;
 .loop {
     color: rgba(133, 126, 131, 0.673);
     font-size: 30px;
-    background-color:rgb(240, 234, 239);
+    background-color:#F5F5F5;
     padding: 6px;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
@@ -28,8 +28,8 @@ font-family: 'Roboto', sans-serif;
 
 .search {
    border-style: solid;
-   background-color:rgb(240, 234, 239);
-   border-color: rgb(240, 234, 239);
+   background-color:#F5F5F5;
+   border-color: #F5F5F5;
    border-right-color:#E6E6EA;
    width: 600px;
    height: 30px;
@@ -38,7 +38,7 @@ font-family: 'Roboto', sans-serif;
    border: 0px;
    width: 90px;
    height: 30px;
-   background-color:rgb(240, 234, 239);
+   background-color:#F5F5F5;
    font-family: 'Roboto', sans-serif;
    font-size: 12px;
    -webkit-appearance: button;
@@ -61,5 +61,5 @@ font-family: 'Roboto', sans-serif;
 }
 
 .navbar button:hover {
-    background-color:rgb(240, 234, 239);
+    background-color:#F5F5F5;
   }

@@ -1,28 +1,243 @@
-.Modal {
+.modal{
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top:5%;
 }
 
-.Modal__container {
-  position: relative;
-  top: 10rem;
-  background-color: #ffffff;
-  padding: 1rem;
-  width: 400px;
-} 
-
-.Modal__close-button {
+ .close-btn{
   position: absolute;
   top: 0;
   right: 0;
   border: 0;
   background-color: #F5F5F5;
-  padding: 0.5rem1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30%;
+} 
+
+.close-btn:hover{
+  background-color:rgb(240, 234, 239);
+}
+
+.cross{
+  color: rgba(133, 126, 131, 0.673);
+  font-size: 25px;
+}
+
+.header-modal{
+  margin-top:3%;
+  padding-top:5px;
+  display:flex;
+  height: 60px !important;
+  width:70%;
+  background-color:white;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+ .header-two{
+  display:inline-flex;
+  width:40%;
+}  
+
+.dots-btn{
+  padding: 10px;
+  color: rgba(133, 126, 131, 0.673);
+  border-radius: 30%;
+  border-style: none;
+}
+.dots-btn:hover{
+  background-color:#F5F5F5;
+}
+
+.upload{
+  margin-right:10px;
+}
+.fa-ellipsis-h{
+  color: rgba(133, 126, 131, 0.673);
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.btn-send{
+  padding: 10px 14px;
+  height: 80%;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 8px;
+  background-color: #efefef;
+  margin-right: 5%;
+}
+.btn-send:hover, .btn-tag:hover{
+  background-color:rgb(240, 234, 239);
+}
+
+.narrow-up{
+ float: right;
+} 
+
+.btn-tag{
+  padding: 10px 14px;
+  height: 80%;
+  width:40%;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #333;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 8px;
+  background-color: #efefef;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.btn-save{
+  height: 80%;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  background-color: #e60023;
+  border-radius: 8px;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+}
+.btn-save:hover{
+  background-color: #b71c1c;
+}
+
+
+.containerImgyText{
+  background-color:white;
+  width: 70%;
+  flex-direction: row;
+  display: flex;
+  height: 760px;
+  padding-top:20px; 
+} 
+
+.img-container{
+  padding-left:1%;
+  box-sizing: border-box;
+  display: block;
+  flex-grow: 8;  
+}
+
+.img-modal{
+  border-radius: 8px;
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+}
+
+.text-container{
+  background-color: #fff;
+  box-sizing: border-box;
+  display: block;
+  flex-grow: 1;
+}
+
+.container-modal{
+  position: fixed;
+  top: 55px;
+  display: flex;
+  width: 100%;
+  background: rgb(238, 238, 238);
+}
+
+
+.link{
+  /* padding: 4px 80px;  */
+  padding:2%;
+  background-color: #efefef;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  width:336px; 
+  margin-left: 48px;
+  margin-top: 15px;
+  display: flex;
+}
+.link:hover{
+  background-color: #bdbdbd;
+}
+.line{
+  border: 1px solid #efefef;
+  width: 330px;
+  margin-right: 24px;
+
+}
+.text{
+  text-align: left;
+  color: #333;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  margin-left:80px;
+  margin-bottom: 5px;
+}
+
+.btn-follow{
+  background-color: #e60023;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  border: none;
+  cursor: pointer;
+  margin-left: 290px;
+  margin-top:-19px;
+}
+.btn-follow:hover{
+  background-color: #b71c1c;
+}
+
+.btn-numberphotos{
+  background-color: #efefef;
+  color: #333;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 80px;
+  margin-top: -9px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-numberphotos:hover{
+  text-decoration: underline;
+}
+.comments{
+  display: inline-block;
+  margin-left: 15px;
+  color: #8e8e8e;
+  font-weight: bold;
+}
+.comments:hover{
+  text-decoration: underline;
+  color: #333;
+  font-size: 16px;
 }

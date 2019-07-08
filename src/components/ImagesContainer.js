@@ -12,12 +12,15 @@ class ImagesContainer extends React.Component{
     <MasonryLayout columns={5} gap={19}>
         {this.props.img.map(item => (   
         <Image 
-        //  modal={this.openModal}
         img={item.urls.thumb}
+        imgsm={item.urls.small}
         alt={item.alt_description}
         tags={item.tags[0].title}
+        user={item.user.name}
+        website={item.user.portfolio_url}
+        likes={item.likes}
         key={item.id}
-        item={item}  
+        item={item}     
         /> 
         ))
         }
